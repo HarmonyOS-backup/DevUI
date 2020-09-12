@@ -1,0 +1,29 @@
+<div class="demo-container">
+  <div class="demo-example">
+    <div class="demo-title">标准对话框</div>
+    <div class="demo-text">
+      使用dialogService可拖拽的标准对话框
+    </div>
+    <d-codebox id="basic" [sourceData]="basicSource">
+        <d-basic demo></d-basic>
+    </d-codebox>
+  </div>
+  <div class="demo-example">
+      <div class="demo-title">自定义对话框</div>
+      <div class="demo-text">
+          使用modalService可以自定义对话框内的所有内容
+      </div>
+      <d-codebox id="customize" [sourceData]="customizeSource">
+          <d-customize demo></d-customize>
+      </d-codebox>
+    </div>
+    <div class="demo-example">
+        <div class="demo-title">信息提示</div>
+        <div class="demo-text">
+            各种类型的信息提示框
+        </div>
+        <d-codebox id="tips" [sourceData]="tipsSource">
+            <d-tips demo></d-tips>
+        </d-codebox>
+      </div>
+</div>

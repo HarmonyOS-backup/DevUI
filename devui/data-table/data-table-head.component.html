@@ -1,0 +1,10 @@
+<ng-container>
+  <ng-template [ngTemplateOutlet]="headTemplate ? headTemplate.template : dataTableTemplates.headTemplate"
+            [ngTemplateOutletContext]="{ $implicit: this }" 
+            *ngIf="! (rowCount > 0)">
+  </ng-template>
+  <ng-template [ngTemplateOutlet]="headTemplate ? headTemplate.template : dataTableTemplates.AdvancedHeadTmpl"
+            [ngTemplateOutletContext]="{ $implicit: this, rows: rowCountArray  }" 
+            *ngIf="rowCount > 0">
+  </ng-template>
+</ng-container>

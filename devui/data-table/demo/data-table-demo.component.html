@@ -1,0 +1,83 @@
+<div class="demo-container">
+  <div class="demo-example">
+    <div class="demo-title">基本用法</div>
+    <div class="demo-text">
+      简单表格，展示列表数据
+    </div>
+    <d-codebox id="components-table-default" [sourceData]="basicSource">
+      <d-datatable-demo-basic demo></d-datatable-demo-basic>
+    </d-codebox>
+  </div>
+  <div class="demo-example">
+    <div class="demo-title">表格交互</div>
+    <div class="demo-text">
+        支持列排序、列过滤、选中、调整列宽
+    </div>
+    <d-codebox id="components-table-one" [sourceData]="oneColumnSource">
+      <d-datatable-demo-onlyonecolumnsort demo></d-datatable-demo-onlyonecolumnsort>
+    </d-codebox>
+  </div>
+  <div class="demo-example">
+    <div class="demo-title">异步加载数据</div>
+    <div class="demo-text">
+      异步加载表格数据，列动态配置
+    </div>
+    <d-codebox id="components-table-async" [sourceData]="asyncSource">
+      <d-datatable-demo-async demo></d-datatable-demo-async>
+    </d-codebox>
+  </div>
+  <div class="demo-example">
+    <div class="demo-title">表头固定</div>
+    <div class="demo-text">
+        设置表格最大高度，同时表头不跟随滚动
+    </div>
+    <d-codebox id="components-table-max" [sourceData]="maxHeightSource">
+      <d-datatable-demo-maxheight demo></d-datatable-demo-maxheight>
+    </d-codebox>
+  </div>
+  <div class="demo-example">
+    <div class="demo-title">列表数据懒加载</div>
+    <div class="demo-text">
+        跟随滚动，懒加载，不断增加表格数据
+    </div>
+    <d-codebox id="components-table-lazy" [sourceData]="lazySource">
+      <d-datatable-demo-lazyloaddata demo></d-datatable-demo-lazyloaddata>
+    </d-codebox>
+  </div>
+  <div class="demo-example">
+    <div class="demo-title">多行表头</div>
+    <div class="demo-text">
+        表头支持分组，显示多行
+    </div>
+    <d-codebox id="components-table-multi" [sourceData]="multiSource">
+      <d-datatable-demo-multiheader demo></d-datatable-demo-multiheader>
+    </d-codebox>
+  </div>
+  <div class="demo-example">
+    <div class="demo-title">编辑单元格</div>
+    <div class="demo-text">
+        通过列的编辑功能（editable）、类型（fieldType）和额外配置（extraOptions）来配置单元格的编辑功能
+    </div>
+    <d-codebox id="components-table-editable" [sourceData]="editableSource">
+      <d-datatable-demo-editable demo></d-datatable-demo-editable>
+    </d-codebox>
+  </div>
+  <div class="demo-example">
+    <div class="demo-title">扩展额外行</div>
+    <div class="demo-text">
+        通过headerExpandConfig和行数据的expandConfig来配置表头和某一行下的可自定义的扩展行，通过showDetail来配置扩展行的展开图标
+    </div>
+    <d-codebox id="components-table-expand" [sourceData]="expandTableSource">
+      <d-expand-row demo></d-expand-row>
+    </d-codebox>
+  </div>
+  <div class="demo-example">
+    <div class="demo-title">树形表格</div>
+    <div class="demo-text">
+        通过列的nestedColumn属性和行数据的children字段来配置渲染树形表格
+    </div>
+    <d-codebox id="components-tree-table" [sourceData]="treeTableSource">
+      <d-tree-data demo></d-tree-data>
+    </d-codebox>
+  </div>
+</div>

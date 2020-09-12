@@ -1,0 +1,32 @@
+<div class="demo-container">
+  <div class="demo-example">
+    <div class="demo-title">基本用法</div>
+    <div class="demo-text">
+      从一个container拖动到另外一个container，并支持排序
+    </div>
+    <d-codebox id="components-dragdrop-default" [sourceData]="basicSource">
+      <d-basic demo></d-basic>
+    </d-codebox>
+  </div>
+
+  <div class="demo-example">
+    <div class="demo-title">多层树状拖拽</div>
+    <div class="demo-text">
+      排序允许拖拽到元素上，支持层级嵌套
+    </div>
+    <d-codebox id="components-dragdrop-tree" [sourceData]="treeSource">
+      <d-tree demo></d-tree>
+    </d-codebox>
+  </div>
+
+  <div class="demo-example">
+    <div class="demo-title">拖拽实体元素跟随</div>
+    <div class="demo-text">
+      允许拖拽时候非半透明元素跟随
+    </div>
+    <d-codebox id="components-dragdrop-follow" [sourceData]="treeSource">
+      <d-follow demo></d-follow>
+    </d-codebox>
+  </div>
+
+</div>

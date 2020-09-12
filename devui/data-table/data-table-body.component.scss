@@ -1,0 +1,30 @@
+@import '../style/theme/color';
+
+.table-row-selected {
+  background-color: $focus3;
+}
+
+.detail-content {
+  color: $dark1;
+  font-size: 12px;
+  font-weight: 100;
+  background-color: $gray3;
+}
+
+.child-table {
+  &:hover  {
+    background: transparent!important;
+  }
+  .devui-table {
+    background: transparent;
+    margin-bottom: 0;
+  }
+  & > td {
+    padding: 0 0 0 0;
+    border: 0;
+  }
+}
+
+.expand-row:hover {
+  background: inherit!important;
+}

@@ -1,0 +1,57 @@
+@import '../style/theme/color';
+@import '../style/theme/variables';
+@import '../style/mixins/index';
+
+:host {
+  display: block;
+}
+
+.devui-status {
+  line-height: 20px;
+  display: inline-block;
+  height: 20px;
+    &::before {
+        display: inline-block;
+        content: '';
+        width: 8px;
+        height: 8px;
+        margin-right: 8px;
+        border-radius: 100%;
+    }
+
+     &.d-status-bg-success::before {
+        background: $status-green;
+    }
+
+    &.d-status-bg-error::before {
+        background: $status-red;
+    }
+
+    &.d-status-bg-warning::before {
+        background: $status-yellow;
+    }
+
+    &.d-status-bg-important::before {
+        background: $status-yellow;
+    }
+
+    &.d-status-bg-less-important::before {
+        background: #FFDF92;
+    }
+
+    &.d-status-bg-waiting::before {
+        background: #9FAAD7;
+    }
+
+    &.d-status-bg-running::before {
+        background: $status-blue;
+    }
+
+    &.d-status-bg-invalid::before {
+        background: $gray1;
+    }
+
+    &.d-status-bg-initial::before {
+        background: $focus3;
+    }
+}
